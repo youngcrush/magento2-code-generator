@@ -1,18 +1,18 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastava
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate;
+namespace Amit\CodeGenerator\Model\Generate;
 
-use Webkul\CodeGenerator\Model\Helper as CodeHelper;
-use Webkul\CodeGenerator\Api\GenerateInterface;
+use Amit\CodeGenerator\Model\Helper as CodeHelper;
+use Amit\CodeGenerator\Api\GenerateInterface;
 use Magento\Framework\Simplexml\Config;
 use Magento\Framework\Simplexml\Element;
-use Webkul\CodeGenerator\Model\XmlGeneratorFactory;
+use Amit\CodeGenerator\Model\XmlGeneratorFactory;
 
 /**
  * Class controller

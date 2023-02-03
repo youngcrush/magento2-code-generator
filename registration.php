@@ -1,13 +1,13 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit Choudhary
  */
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Webkul_CodeGenerator',
+    'Amit_CodeGenerator',
     __DIR__
 );

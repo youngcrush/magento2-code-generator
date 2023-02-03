@@ -1,12 +1,10 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @category   Webkul
+ * @category   Amit
  * @package    %module_name%
- * @author     Webkul
- * @copyright  Copyright (c) Webkul Software Private Limited (https://webkul.com)
- * @license    https://store.webkul.com/license.html
+ * @author     Amit
  */
 
 namespace %namespace%\Logger;

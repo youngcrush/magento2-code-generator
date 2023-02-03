@@ -1,15 +1,15 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastava
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate;
+namespace Amit\CodeGenerator\Model\Generate;
 
-use Webkul\CodeGenerator\Model\Helper as CodeHelper;
-use Webkul\CodeGenerator\Api\GenerateInterface;
+use Amit\CodeGenerator\Model\Helper as CodeHelper;
+use Amit\CodeGenerator\Api\GenerateInterface;
 use Zend\Code\Generator\ClassGenerator;
 use Zend\Code\Generator\DocBlockGenerator;
 use Zend\Code\Generator\DocBlock\Tag;

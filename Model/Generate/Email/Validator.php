@@ -1,14 +1,14 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Sanjay Chouhan
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate\Email;
+namespace Amit\CodeGenerator\Model\Generate\Email;
 
-class Validator implements \Webkul\CodeGenerator\Api\ValidatorInterface
+class Validator implements \Amit\CodeGenerator\Api\ValidatorInterface
 {
     /**
      * Validate command params

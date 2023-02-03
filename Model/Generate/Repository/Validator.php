@@ -1,14 +1,14 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate\Repository;
+namespace Amit\CodeGenerator\Model\Generate\Repository;
 
-class Validator implements \Webkul\CodeGenerator\Api\ValidatorInterface
+class Validator implements \Amit\CodeGenerator\Api\ValidatorInterface
 {
     public function validate($data)
     {

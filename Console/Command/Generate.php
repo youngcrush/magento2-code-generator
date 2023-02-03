@@ -1,12 +1,12 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Console\Command;
+namespace Amit\CodeGenerator\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -30,7 +30,7 @@ class Generate extends Command
     ) {
         $this->validators = $validators;
         $this->optionsPool = \Magento\Framework\App\ObjectManager::getInstance()
-        ->get(\Webkul\CodeGenerator\Model\OptionsPool::class);
+        ->get(\Amit\CodeGenerator\Model\OptionsPool::class);
         $state = \Magento\Framework\App\ObjectManager::getInstance()->get(\Magento\Framework\App\State::class);
         $state->setAreaCode("adminhtml");
         parent::__construct();
@@ -79,7 +79,7 @@ class Generate extends Command
     {
         $output->writeln("<info>====> Code Generation started \n". json_encode($data).'</info>');
         $generatorPool = \Magento\Framework\App\ObjectManager::getInstance()
-        ->get(\Webkul\CodeGenerator\Model\GeneratorPool::class);
+        ->get(\Amit\CodeGenerator\Model\GeneratorPool::class);
 
         $generator = $generatorPool->get(strtolower($data['type']));
         try {

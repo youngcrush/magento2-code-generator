@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Mahesh Singh
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">

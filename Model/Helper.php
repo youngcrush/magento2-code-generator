@@ -1,12 +1,12 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model;
+namespace Amit\CodeGenerator\Model;
 
 use Zend\Code\Generator\DocBlockGenerator;
 use Zend\Code\Generator\DocBlock\Tag;
@@ -26,13 +26,11 @@ class Helper {
     public function getHeadDocBlock($moduleName)
     {
         return DocBlockGenerator::fromArray([
-            'shortDescription' => 'Webkul Software.',
+            'shortDescription' => 'Amit Software.',
             'tags'             => [
-                new Tag\GenericTag('category', 'Webkul'),
+                new Tag\GenericTag('category', 'Amit'),
                 new Tag\GenericTag('package', $moduleName),
-                new Tag\GenericTag('author', 'Webkul'),
-                new Tag\GenericTag('copyright', 'Copyright (c) Webkul Software Private Limited (https://webkul.com)'),
-                new Tag\LicenseTag('https://store.webkul.com/license.html', '')
+                new Tag\GenericTag('author', 'Amit')
                
             ],
         ]);

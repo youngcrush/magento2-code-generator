@@ -1,16 +1,16 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Mahesh Singh
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate;
+namespace Amit\CodeGenerator\Model\Generate;
 
-use Webkul\CodeGenerator\Model\Helper;
-use Webkul\CodeGenerator\Api\GenerateInterface;
-use Webkul\CodeGenerator\Model\XmlGeneratorFactory;
+use Amit\CodeGenerator\Model\Helper;
+use Amit\CodeGenerator\Api\GenerateInterface;
+use Amit\CodeGenerator\Model\XmlGeneratorFactory;
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Framework\Simplexml\Config;
 use Magento\Framework\Simplexml\Element;
@@ -70,7 +70,7 @@ class View implements GenerateInterface
         $childPaths = explode('/', $block);
         $blockClass = array_pop($childPaths);
         if (!empty($childPaths)) {
-            $childPaths = array_map(['\Webkul\CodeGenerator\Model\Generate\View', 'getClassName'], $childPaths);
+            $childPaths = array_map(['\Amit\CodeGenerator\Model\Generate\View', 'getClassName'], $childPaths);
             $childPaths = implode(DIRECTORY_SEPARATOR, $childPaths);
         } else {
             $childPaths = '';

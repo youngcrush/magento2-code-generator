@@ -1,16 +1,16 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Mahesh Singh
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate\NewModule;
+namespace Amit\CodeGenerator\Model\Generate\NewModule;
 
 use Magento\Framework\Exception\LocalizedException;
 
-class Validator implements \Webkul\CodeGenerator\Api\ValidatorInterface
+class Validator implements \Amit\CodeGenerator\Api\ValidatorInterface
 {
     private $validationRule = '/^[a-zA-Z]+[a-zA-Z0-9._]+$/';
 
@@ -43,7 +43,7 @@ class Validator implements \Webkul\CodeGenerator\Api\ValidatorInterface
         $moduleNameSplit = explode('_', $module);
         if (!isset($moduleNameSplit[1])) {
             throw new \RuntimeException(
-                __('Incorrect module name "%1", correct name ex: Webkul_Test', $module)
+                __('Incorrect module name "%1", correct name ex: Amit_Test', $module)
             );
         }
         

@@ -1,12 +1,12 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model;
+namespace Amit\CodeGenerator\Model;
 
 /**
  * Class GeneratorPool
@@ -26,7 +26,7 @@ class GeneratorPool
      * get generator class
      *
      * @param string $key
-     * @return Webkul\CodeGenerator\Api\GenerateInterface
+     * @return Amit\CodeGenerator\Api\GenerateInterface
      */
     public function get($key)
     {

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!-- /**
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */ -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Webkul_CodeGenerator">
+    <module name="Amit_CodeGenerator">
     </module>
 </config>

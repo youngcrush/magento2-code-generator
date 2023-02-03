@@ -2,7 +2,7 @@
 
 # Installation
 
-``` composer require webkul/code-generator ```
+``` composer require amit/code-generator ```
 
 ``` php -f bin/magento setup:upgrade ```
 
@@ -58,7 +58,7 @@ If you have created the db_schema file for the table in the above command, it wi
 
 - To create view
 
-``` php bin/magento generate:code Module_Name --type=create-view --name=webkul_index_index --area=adminhtml --block-class=Main --template=hello.phtml --layout-type=admin-2column-left ```
+``` php bin/magento generate:code Module_Name --type=create-view --name=amit_index_index --area=adminhtml --block-class=Main --template=hello.phtml --layout-type=admin-2column-left ```
 
 ``` --block-class ```, ``` --template ```, ``` --layout-type ``` are optional.
 

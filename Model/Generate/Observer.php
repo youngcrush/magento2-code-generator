@@ -1,14 +1,14 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Sanjay Chouhan
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
-namespace Webkul\CodeGenerator\Model\Generate;
-use Webkul\CodeGenerator\Model\Helper;
-use Webkul\CodeGenerator\Api\GenerateInterface;
-use Webkul\CodeGenerator\Model\XmlGeneratorFactory;
+namespace Amit\CodeGenerator\Model\Generate;
+use Amit\CodeGenerator\Model\Helper;
+use Amit\CodeGenerator\Api\GenerateInterface;
+use Amit\CodeGenerator\Model\XmlGeneratorFactory;
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Framework\Simplexml\Config;
 use Magento\Framework\Simplexml\Element;

@@ -1,14 +1,14 @@
 <?php
 /**
- * Webkul Software.
+ * Amit Software.
  *
- * @package   Webkul_CodeGenerator
- * @author    Ashutosh Srivastva
+ * @package   Amit_CodeGenerator
+ * @author    Amit
  */
 
-namespace Webkul\CodeGenerator\Model\Generate;
+namespace Amit\CodeGenerator\Model\Generate;
 
-use Webkul\CodeGenerator\Api\GenerateInterface;
+use Amit\CodeGenerator\Api\GenerateInterface;
 use Zend\Code\Generator\ClassGenerator;
 use Zend\Code\Generator\DocBlockGenerator;
 use Zend\Code\Generator\DocBlock\Tag;
@@ -16,7 +16,7 @@ use Zend\Code\Generator\MethodGenerator;
 use Zend\Code\Generator\PropertyGenerator;
 use Zend\Code\Generator\ParameterGenerator;
 use Magento\Framework\Setup\Declaration\Schema\Declaration\ReaderComposite;
-use Webkul\CodeGenerator\Model\Helper;
+use Amit\CodeGenerator\Model\Helper;
 
 /**
  * Class Repository
