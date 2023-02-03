@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @package   Webkul_CodeGenerator
+ * @author    Ashutosh Srivastva
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="webkul_code_generator" xsi:type="object">Webkul\CodeGenerator\Console\Command\Generate</item>
+            </argument>
+        </arguments>
+    </type>
+
+     <type name="Webkul\CodeGenerator\Console\Command\Generate">
+        <arguments>
+            <argument name="validators" xsi:type="array">
+                <item name="model" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Model\Validator</item>
+                <item name="new-module" xsi:type="object">Webkul\CodeGenerator\Model\Generate\NewModule\Validator</item>
+                <item name="payment" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Payment\Validator</item>
+                <item name="repository" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Repository\Validator</item>
+                <item name="shipping" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Shipping\Validator</item>
+                <item name="helper" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Helper\Validator</item>
+                <item name="plugin" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Plugin\Validator</item>
+                <item name="controller" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Controller\Validator</item>
+                <item name="unit-test" xsi:type="object">Webkul\CodeGenerator\Model\Generate\UnitTestCase\Validator</item>
+                <item name="observer" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Observer\Validator</item>
+                <item name="cron" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Cron\Validator</item>
+
+                <item name="create-view" xsi:type="object">Webkul\CodeGenerator\Model\Generate\View\Validator</item>
+
+                <item name="logger" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Logger\Validator</item>
+                <item name="command" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Command\Validator</item>
+                <item name="rewrite" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Rewrite\Validator</item>
+                <item name="email" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Email\Validator</item>
+
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\CodeGenerator\Model\GeneratorPool">
+        <arguments>
+            <argument name="generators" xsi:type="array">
+                <item name="model" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Model</item>
+                <item name="new-module" xsi:type="object">Webkul\CodeGenerator\Model\Generate\NewModule</item>
+                <item name="payment" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Payment</item>
+                <item name="repository" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Repository</item>
+                <item name="shipping" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Shipping</item>
+                <item name="helper" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Helper</item>
+                <item name="plugin" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Plugin</item>
+                <item name="controller" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Controller</item>
+                <item name="unit-test" xsi:type="object">Webkul\CodeGenerator\Model\Generate\UnitTestCase</item>
+                <item name="observer" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Observer</item>
+                <item name="cron" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Cron</item>
+
+                <item name="create-view" xsi:type="object">Webkul\CodeGenerator\Model\Generate\View</item>
+
+                <item name="logger" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Logger</item>
+                <item name="command" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Command</item>
+                <item name="rewrite" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Rewrite</item>
+                <item name="email" xsi:type="object">Webkul\CodeGenerator\Model\Generate\Email</item>
+
+            </argument>
+        </arguments>
+    </type>
+
+</config>
