@@ -1,0 +1,18 @@
+<?php
+
+namespace %namespace%\Plugin;
+
+/**
+ * Plugin class.
+ */
+class %plugin_name%
+{
+    /**
+     * __construct Function
+     */
+    public function __construct(
+        
+    ) {
+        
+    }
+}

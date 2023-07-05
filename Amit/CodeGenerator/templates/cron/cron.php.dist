@@ -1,0 +1,29 @@
+<?php
+
+namespace %namespace%\Cron;
+
+/**
+ * Cron class.
+ */
+class %cron_name%
+{
+    /**
+     * initialization
+     *
+     */
+    public function __construct(
+        
+    ) {
+        
+    }
+
+    /**
+     * Execute the Cron
+     *
+     * @return void
+     */
+    public function execute()
+    {
+        // write your code here
+    }
+}

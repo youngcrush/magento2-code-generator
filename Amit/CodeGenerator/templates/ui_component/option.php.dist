@@ -1,0 +1,32 @@
+<?php
+
+namespace %namespace%;
+
+use Magento\Framework\Data\OptionSourceInterface;
+
+/**
+ * Source Options.
+ */
+class Options implements OptionSourceInterface
+{
+    
+    /**
+     * elements type
+     */
+    public const YES = 1;
+    public const NO = 0;
+
+    /**
+     * Get element type.
+     *
+     * @return array
+     */
+    public function toOptionArray()
+    {
+        $options = [
+            ['value' => self::NO, 'label' => __('No')],
+            ['value' => self::YES, 'label' => __('Yes')]
+        ];
+        return $options;
+    }
+}
